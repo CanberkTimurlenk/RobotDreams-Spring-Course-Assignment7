@@ -52,7 +52,7 @@ public class OrderService {
         // find user with ID
         User user = userService.findById(orderRequestDto.getUserId()).get();
         // send SMS
-        smsService.sendSms(order,user);
+        smsService.sendSms(order, user);
 
         // return true, if order have been created successfully. Otherwise false
         return order.getId() > 0

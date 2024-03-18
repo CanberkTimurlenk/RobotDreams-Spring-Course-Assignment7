@@ -6,6 +6,7 @@ public class OrderRequestDto implements Serializable {
     private Long productId;
     private String description;
     private Long userId;
+    private String orderNumber;
 
     public Long getProductId() {
         return productId;
@@ -29,5 +30,13 @@ public class OrderRequestDto implements Serializable {
 
     public void setUserId(Long userId) {
         this.userId = userId;
+    }
+
+    public String getOrderNumber() {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(String orderNumber) {
+        this.orderNumber = orderNumber;
     }
 }
